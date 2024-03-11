@@ -1,3 +1,4 @@
+
 <%@ page import="java.util.List" %>
 <%@ page import="com.studentmngsys.dob.StudentaDao" %>
 <%@ page import="com.studentmngsys.dob.StudentDaoImp" %>
@@ -8,6 +9,22 @@
 <head>
     <meta charset="UTF-8">
     <title>List of All Students</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h2>List of All Students</h2>

@@ -2,6 +2,7 @@ package com.student_view;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Student implements Serializable {
 	private int rollno;
 	private String name;
