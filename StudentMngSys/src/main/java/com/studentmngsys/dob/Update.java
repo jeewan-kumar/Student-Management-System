@@ -29,20 +29,13 @@ public class Update extends HttpServlet {
         student.setPassword(req.getParameter("password"));
         String message = null;
         boolean saveStudent =false;
+        StudentaDao dao = new StudentDaoImp();
         
-        try {
-        	saveStudent = dao.updateStudent(student);
-        } catch (SQLException e) {
-			message=e.getMessage();
-			e.printStackTrace();
-		}
-        // Attempting to update the student
-        //boolean updateSuccessful = dao.updateStudent(student);
+        saveStudent = dao.updateStudent(student);
         
-        // Redirecting to appropriate page based on the update result
         if (saveStudent) {
             // If update successful, redirect to welcome page
-            req.getRequestDispatcher("Welcome.jsp").forward(req, resp);
+            req.getRequestDispatcher("Find.jsp").forward(req, resp);
         } else {
             // If update failed, forward back to registration page with error message
             req.setAttribute("message", "Failed to update student.");

@@ -134,10 +134,14 @@
                 <td><%= student.getAddress() %></td>
             </tr>
         </table>
-        <div class="button-container">
-            <button onclick="window.location.href='Update.jsp?id=<%=student.getRollno()%>'">Update</button>
+      <!--   <a href="Update.jsp?id=<%=student.getRollno()%>">Update</a>-->
+        
+        
+         <div class="button-container">
+        	
+            <button onclick="window.location.href='Update.jsp?id=<%=student.getRollno()%>'"> Update</button>
             <button onclick="window.location.href='Delete.jsp?id=<%=student.getRollno()%>'">Delete</button>
-        </div>
+        </div> 
     <% 
             } else {
                 throw new StudentNotFoundException("Student with ID " + rollno + " not found");

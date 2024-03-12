@@ -63,7 +63,7 @@
 </head>
 <body>
     <h2>Delete Student By Roll Number</h2>
-    <form action="deleteStudent" method="post">
+    <form action="delete" method="post">
         <label for="rollno">Enter Roll Number:</label><br>
         <input type="text" id="rollno" name="rollno" required><br><br>
         <input type="submit" value="Delete">

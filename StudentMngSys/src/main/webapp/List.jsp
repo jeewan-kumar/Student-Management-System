@@ -24,6 +24,10 @@
         th {
             background-color: #f2f2f2;
         }
+        h2{
+        	text-align: center;
+        	
+        }
     </style>
 </head>
 <body>
